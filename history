@@ -1,0 +1,139 @@
+ 123  24-Oct-2021 07:01:22 docker stop 4896129ffd99
+  124  24-Oct-2021 07:01:42 docker start 4896129ffd99
+  125  24-Oct-2021 07:03:31 sudo docker run -it –name=Test_1 ubuntu
+  126  24-Oct-2021 07:03:44 sudo docker run -it –name=test1 ubuntu
+  127  24-Oct-2021 07:03:58 sudo docker run -it ubuntu
+  128  24-Oct-2021 07:08:32 docker ps
+  129  24-Oct-2021 07:08:40 docker ps -a
+  130  24-Oct-2021 07:11:22 docker stop 4896129ffd99
+  131  24-Oct-2021 07:12:19 docker network
+  132  24-Oct-2021 07:12:29 docker network ls
+  133  24-Oct-2021 07:12:37 docker ps -a
+  134  24-Oct-2021 07:12:40 docker ps
+  135  24-Oct-2021 07:13:15 sudo docker run -d -p 8088:80 nginx
+  136  24-Oct-2021 07:13:28 docker ps
+  137  24-Oct-2021 07:13:44 docker stop 0e98d4a122dd 
+  138  24-Oct-2021 07:13:54 sudo docker run  -p 8088:80 nginx
+  139  24-Oct-2021 07:15:07 docker ps
+  140  24-Oct-2021 07:15:21 sudo docker run -d -p 8088:80 nginx
+  141  24-Oct-2021 07:15:25 docker ps
+  142  24-Oct-2021 07:15:43 docker inspect 73c94d565066
+  143  24-Oct-2021 07:16:53 docker network 73c94d565066
+  144  24-Oct-2021 07:17:18 docker network ls
+  145  24-Oct-2021 07:06:43 docker ps
+  146  30-Oct-2021 03:44:59 docker pull node:slim
+  147  30-Oct-2021 03:45:09 docker images
+  148  30-Oct-2021 03:52:20 ls
+  149  30-Oct-2021 03:52:24 cd demo
+  150  30-Oct-2021 03:52:28 mkdir demo
+  151  30-Oct-2021 03:52:31 cd demo/
+  152  30-Oct-2021 03:52:40 vi Dockerfile
+  153  30-Oct-2021 03:53:36 ls
+  154  30-Oct-2021 03:53:57 docker build .
+  155  30-Oct-2021 03:54:49 vi index.nginx-debian.html
+  156  30-Oct-2021 03:55:19 docker build .
+  157  30-Oct-2021 03:56:46 docker ps
+  158  30-Oct-2021 03:56:54 docker images
+  159  30-Oct-2021 03:57:37 docker rm 44402617e254
+  160  30-Oct-2021 03:57:52 docker rmi 44402617e254
+  161  30-Oct-2021 03:58:43 docker build . -t ajsatix/nginxex
+  162  30-Oct-2021 03:59:06 docker images
+  163  30-Oct-2021 04:01:18 docker push ajsatix/nginxex
+  164  30-Oct-2021 04:01:37 docker login 
+  165  30-Oct-2021 04:02:03 docker push ajsatix/nginxex
+  166  30-Oct-2021 04:06:12 docker run ajsatix/nginxex
+  167  30-Oct-2021 04:09:06 docker run -d ajsatix/nginxex
+  168  30-Oct-2021 04:09:26 docker ps
+  169  30-Oct-2021 04:10:42 vi Dockerfile 
+  170  30-Oct-2021 04:12:01 docker build . -t ajsatix/nginxex
+  171  30-Oct-2021 04:12:14 docker ps
+  172  30-Oct-2021 04:12:54 docker run -d 8088:8088 ajsatix/nginxex
+  173  30-Oct-2021 04:13:11 docker run -d -p 8088:8088 ajsatix/nginxex
+  174  30-Oct-2021 04:13:16 docker ps
+  175  30-Oct-2021 04:14:00 vi Dockerfile 
+  176  30-Oct-2021 04:14:19 docker build . -t ajsatix/nginxex
+  177  30-Oct-2021 04:14:32 docker run -d -p 8088:80 ajsatix/nginxex
+  178  30-Oct-2021 04:14:49 docker run -d -p 8089:80 ajsatix/nginxex
+  179  30-Oct-2021 04:31:53 dockerps
+  180  30-Oct-2021 04:31:56 docker ps
+  181  30-Oct-2021 04:32:28 docker exec -it  ajsatix/nginxex
+  182  30-Oct-2021 04:33:01 docker exec -it 8b79b0f4e2b9
+  183  30-Oct-2021 04:33:19 docker stop 8b79b0f4e2b9
+  184  30-Oct-2021 04:33:48 docker run -it -p 8089:80 ajsatix/nginxex
+  185  30-Oct-2021 04:34:41 docker run -it ubuntu
+  186  30-Oct-2021 04:36:35 export PORTNO=9876
+  187  30-Oct-2021 04:36:42 echo $PORTNO
+  188  30-Oct-2021 04:39:03 docker run -it ubuntu -e PORT_NO=$PORTNO -e APPDIR=/home/ubuntu/src/web 
+  189  30-Oct-2021 04:40:33 docker run -it ubuntu --env -e PORT_NO=$PORTNO -e APPDIR=/home/ubuntu/src/web 
+  190  30-Oct-2021 04:40:55 docker run -it ubuntu --env PORT_NO=$PORTNO
+  191  30-Oct-2021 04:41:08 docker run  ubuntu --env PORT_NO=$PORTNO
+  192  30-Oct-2021 04:42:38 docker run  ubuntu --env NAME=hello 
+  193  30-Oct-2021 04:43:24 docker run  nginx  --env NAME=hello 
+  194  30-Oct-2021 04:45:33 docker run -it  --env PORT_NO=$PORTNO ubuntu /bin/bash
+  195  30-Oct-2021 05:03:09 ls
+  196  30-Oct-2021 05:03:16 vi Dockerfile 
+  197  30-Oct-2021 05:06:36 docker build .
+  198  30-Oct-2021 05:06:47 docker images
+  199  30-Oct-2021 05:06:58 docker images -t ub
+  200  30-Oct-2021 05:07:10 docker build . -t ub
+  201  30-Oct-2021 05:07:24 docker run -d ub
+  202  30-Oct-2021 05:07:31 docker ps 
+  203  30-Oct-2021 05:07:41 docker ps -a
+  204  30-Oct-2021 05:07:56 docker logs f04fb251d278
+  205  30-Oct-2021 05:08:53 vi Dockerfile 
+  206  30-Oct-2021 05:19:44 docker ps
+  207  30-Oct-2021 05:20:05 docker inspect 200e530cc444
+  208  30-Oct-2021 05:20:45 docker network
+  209  30-Oct-2021 05:20:54 docker network ls
+  210  30-Oct-2021 05:21:19 docker inspect 200e530cc444 | grep 0dcd52c77765
+  211  30-Oct-2021 05:26:01 docker-compose
+  212  30-Oct-2021 05:26:14 cd
+  213  30-Oct-2021 05:26:17 mkdir compose-test
+  214  30-Oct-2021 05:26:20 cd compose-test/
+  215  30-Oct-2021 05:26:35 sudo apt-get install python-pip
+  216  30-Oct-2021 05:26:46 sudo pip install docker-compose
+  217  30-Oct-2021 05:27:22 docker-compose
+  218  30-Oct-2021 05:27:36 vi docker-compose.yml
+  219  30-Oct-2021 05:28:03 nano docker-compose.yml
+  220  30-Oct-2021 05:28:41 docker-compose up
+  221  30-Oct-2021 05:38:29 cd ..
+  222  30-Oct-2021 05:38:33 docker pull registry:2
+  223  30-Oct-2021 05:38:44 docker run -d -p 5000:5000 
+  224  30-Oct-2021 05:38:44 --restart=always --name registry registry:2
+  225  30-Oct-2021 05:39:21 docker run -d -p 5000:5000 --restart=always --name registry registry:2
+  226  30-Oct-2021 05:39:34 docker pull ubuntu
+  227  30-Oct-2021 05:39:50 docker tag ubuntu localhost:5000/ubuntu
+  228  30-Oct-2021 05:39:54 docker ps
+  229  30-Oct-2021 05:40:06 docker images
+  230  30-Oct-2021 05:40:22 docker push localhost:5000/ubuntu
+  231  30-Oct-2021 05:40:52 docker rmi ubuntu
+  232  30-Oct-2021 05:41:07 docker images
+  233  30-Oct-2021 05:41:54 docker pull localhost:5000/ubuntu
+  234  30-Oct-2021 05:42:00 docker images
+  235  30-Oct-2021 05:43:20 docker rm -f $(docker ps -aq)
+  236  30-Oct-2021 05:43:35 docker rmi $(docker images -q)
+  237  30-Oct-2021 05:43:40 docker images
+  238  30-Oct-2021 05:43:46 clear
+  239  30-Oct-2021 06:02:19 aws cli
+  240  30-Oct-2021 06:06:52 clear
+  241  30-Oct-2021 06:06:56 docker run -it --name centos centos /bin/bash
+  242  30-Oct-2021 06:11:06 docker commit centos centos-net
+  243  30-Oct-2021 06:11:11 docker ps
+  244  30-Oct-2021 06:11:15 docker images
+  245  30-Oct-2021 06:11:49 docker rm centos
+  246  30-Oct-2021 06:12:00 docker rmi centos
+  247  30-Oct-2021 06:12:07 docker images
+  248  30-Oct-2021 06:12:56 docker run -it --name centos centos-net /bin/bash
+  249  30-Oct-2021 06:13:26 docker network ls
+  250  30-Oct-2021 06:14:12 docker network create exnet
+  251  30-Oct-2021 06:14:19 docker network ls
+  252  30-Oct-2021 06:14:40 docker network inspect exnet
+  253  30-Oct-2021 06:19:58 docker run -it --rm --network exnet centos-net /bin/bash
+  254  30-Oct-2021 06:23:58 docker run -it --rm --name centos centos-net /bin/bash
+  255  30-Oct-2021 06:24:11 docker ps
+  256  30-Oct-2021 06:24:19 docker images
+  257  30-Oct-2021 06:24:33 docker ps
+  258  30-Oct-2021 06:24:38 docker ps -a
+  259  30-Oct-2021 06:24:56 docker rm 58c5c58b85a5 
+  260  30-Oct-2021 06:25:03 docker run -it --rm --name centos centos-net /bin/bash
+  261  30-Oct-2021 06:33:53 history
